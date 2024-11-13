@@ -35,7 +35,7 @@ export default function Navbar() {
         transition={{ duration: 0.3 }}
       >
         <nav className="px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-12 h-20 pt-5">
+          <div className="grid grid-cols-12 py-5">
             <div className="col-span-4">
               <Link href="/" className="">
                 <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
@@ -49,13 +49,6 @@ export default function Navbar() {
                   <motion.div
                     key={item}
                     className="text-white hover:bg-violet-700 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-300"
-                    // initial={{ y: 10, opacity: 0 }}
-                    // animate={{ y: 0, opacity: 1 }}
-                    // transition={{
-                    //   delay: index * 0.5,
-                    //   type: "spring",
-                    //   stiffness: 100,
-                    // }}
                   >
                     <Link href={"/"}>{item}</Link>
                   </motion.div>
