@@ -67,24 +67,48 @@ const Hero = () => {
         </motion.h1>
 
         <div className="flex mb-20 mt-4">
-          <div className="badge badge-warning font-bold text-black text-base py-3 mr-3">
+          <motion.div
+            className="badge badge-warning font-bold text-black text-base py-3 mr-3"
+            whileHover={{ scale: 1.05 }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 10,
+            }}
+          >
             Action
-          </div>
-          <div className="badge badge-accent font-bold text-black text-base py-3 mr-3">
+          </motion.div>
+          <motion.div
+            className="badge badge-accent font-bold text-black text-base py-3 mr-3"
+            whileHover={{ scale: 1.05 }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 10,
+            }}
+          >
             Mythology
-          </div>
-          <div className="badge badge-secondary font-bold text-black text-base py-3">
+          </motion.div>
+          <motion.div
+            className="badge badge-secondary font-bold text-black text-base py-3"
+            whileHover={{ scale: 1.05 }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 10,
+            }}
+          >
             3D
-          </div>
+          </motion.div>
         </div>
         <motion.div
-        className="flex"
+          className="flex"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: .7, ease: "easeInOut" }}
+          transition={{ delay: 0.7, ease: "easeInOut" }}
         >
           <motion.button
-            className="px-6 py-3 bg-white rounded-lg text-lg font-bold shadow-lg mr-10"
+            className="px-6 py-3 bg-white rounded-lg text-lg font-bold shadow-lg mr-5"
             variants={buttonVariants}
             initial="initial"
             whileHover="hover"
