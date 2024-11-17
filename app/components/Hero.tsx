@@ -28,7 +28,7 @@ export default function Hero() {
     <motion.div
       className="grid grid-cols-1 md:grid-cols-12 bg-cover w-full min-h-screen relative"
       style={{
-        backgroundImage: `url('/black-myth.png')`,
+        backgroundImage: `url('https://res.cloudinary.com/dir1jzh3n/image/upload/v1731844116/gaming-house/black-myth_ujpvpw.png')`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
