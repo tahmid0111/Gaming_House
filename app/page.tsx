@@ -1,27 +1,29 @@
-import Image from "next/image";
-import Navbar from "./components/header/Navbar";
-import Navbar2 from "./components/header/Navbar2";
-import Hero from "./components/hero/Hero";
-import Games from "./components/games/Games";
-import Product from "./components/others/Product";
-import SliderArea from "./components/others/SliderArea";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Games from "./components/Games";
+import Product from "./components/Product";
+import SliderArea from "./components/SliderArea";
+import Team from "./components/Team";
 
 export default function Home() {
   return (
-    <div className="relative grid grid-cols-12">
+    <div className="relative grid grid-cols-12 bg-black">
       <div className="col-span-12">
         <Navbar />
       </div>
       <div className="col-span-12">
         <Hero />
       </div>
-      <div className="col-span-12 bg-black">
+      <div className="col-span-12">
         <Games />
       </div>
-      <div className="col-span-12 bg-black">
+      <div className="col-span-12">
         <Product />
       </div>
-      <div className="col-span-12 bg-black">
+      <div className="col-span-12">
+        <Team />
+      </div>
+      <div className="col-span-12">
         <SliderArea />
       </div>
     </div>

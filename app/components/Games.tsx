@@ -155,14 +155,14 @@ export default function Component() {
       className="py-8 sm:py-24 bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 min-h-screen"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-500 to-cyan-500">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-bold text-center mb-6 sm:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-500 to-cyan-500">
           Featured Games
         </h2>
 
         <motion.div
           ref={searchRef}
           variants={searchVariants}
-          className="relative mb-6 sm:mb-8 max-w-md mx-auto"
+          className="relative mb-6 sm:mb-8 max-w-md 2xl:max-w-2xl mx-auto"
         >
           <input
             type="text"
@@ -198,7 +198,7 @@ export default function Component() {
                 </div>
               </figure>
               <div className="card-body bg-gradient-to-b from-gray-800 to-gray-900 p-4 sm:p-6">
-                <h3 className="card-title text-lg sm:text-xl font-semibold text-cyan-400 mb-1">
+                <h3 className="card-title text-lg sm:text-xl 2xl:text-2xl font-semibold text-cyan-400 mb-1">
                   {game.title}
                 </h3>
                 <p className="text-pink-400 text-sm sm:text-base mb-2">
@@ -234,7 +234,7 @@ export default function Component() {
                     <motion.span variants={detailsIconVariants}>
                       <Info className="w-4 h-4 sm:w-5 sm:h-5" />
                     </motion.span>
-                    <span className="text-base sm:text-base font-bold">
+                    <span className="text-base 2xl:text-lg sm:text-base font-bold">
                       Details
                     </span>
                   </motion.button>
@@ -249,7 +249,7 @@ export default function Component() {
                     <motion.span variants={detailsIconVariants}>
                       <PlayCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                     </motion.span>
-                    <span className="text-base font-bold">Play Now</span>
+                    <span className="text-base 2xl:text-lg font-bold">Play Now</span>
                   </motion.button>
                 </div>
               </div>

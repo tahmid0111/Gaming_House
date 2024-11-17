@@ -76,7 +76,7 @@ export default function SliderArea() {
       </motion.div>
       <motion.div
         id="slide2"
-        className="carousel-item relative w-full rounded-xl overflow-hidden shadow-lg"
+        className="carousel-item relative w-full overflow-hidden shadow-lg"
         initial={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
         animate={controls}
         onHoverStart={handleHoverStart}
@@ -86,7 +86,7 @@ export default function SliderArea() {
       </motion.div>
       <motion.div
         id="slide3"
-        className="carousel-item relative w-full rounded-xl overflow-hidden shadow-lg"
+        className="carousel-item relative w-full overflow-hidden shadow-lg "
         initial={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
         animate={controls}
         onHoverStart={handleHoverStart}
@@ -96,7 +96,7 @@ export default function SliderArea() {
       </motion.div>
       <motion.div
         id="slide4"
-        className="carousel-item relative w-full rounded-xl overflow-hidden shadow-lg"
+        className="carousel-item relative w-full overflow-hidden shadow-lg "
         initial={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
         animate={controls}
         onHoverStart={handleHoverStart}

@@ -9,7 +9,7 @@ export default function Product() {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white flex items-center justify-center p-4 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white flex items-center justify-center px-4 overflow-hidden pb-32 pt-20">
       <div ref={ref} className="container mx-auto relative">
         <motion.div
           className="absolute inset-0 opacity-30"
@@ -56,13 +56,31 @@ export default function Product() {
               <span className="bg-green-500 text-white text-sm font-semibold px-2 py-1 rounded">Save 20%</span>
             </motion.div>
             <motion.button 
-              className="btn btn-lg bg-gradient-to-r from-pink-500 to-purple-600 border-none text-lg px-10 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              whileHover={{ scale: 1.05, boxShadow: "0 0 15px rgba(236, 72, 153, 0.5)" }}
+              className="relative group btn btn-lg 2xl:btn-wide bg-transparent border-2 border-purple-500 text-lg px-10 py-3 rounded-full shadow-lg transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
             >
-              Add to Cart
+              <span className="relative z-10 text-white group-hover:text-purple-200 transition-colors duration-300">Add to Cart</span>
+              <motion.div
+                className="absolute inset-0 bg-purple-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                initial={{ scale: 0 }}
+                whileHover={{ scale: 1 }}
+              />
+              <motion.div
+                className="absolute -inset-1 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 rounded-full opacity-0 group-hover:opacity-75 blur-sm transition-opacity duration-300"
+                initial={{ scale: 0 }}
+                whileHover={{ scale: 1 }}
+                animate={{
+                  scale: [1, 1.05, 1],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                }}
+              />
             </motion.button>
           </motion.div>
           <motion.div
