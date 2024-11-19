@@ -34,42 +34,42 @@ export default function Team() {
       role: "Technical Support",
       color: "from-cyan-500 to-blue-500",
       image:
-        "https://res.cloudinary.com/dir1jzh3n/image/upload/v1731823098/gaming-house/ana-nichita-BI91NrppE38-unsplash_ludgsa.jpg",
+        "",
     },
     {
       name: "Sam Lee",
       role: "Customer Service",
       color: "from-pink-500 to-purple-500",
       image:
-        "https://res.cloudinary.com/dir1jzh3n/image/upload/v1731823102/gaming-house/ben-tofan-5tfHfwnhyyM-unsplash_j2qbyt.jpg",
+        "",
     },
     {
       name: "Jordan Taylor",
       role: "Game Master",
       color: "from-yellow-500 to-orange-500",
       image:
-        "https://res.cloudinary.com/dir1jzh3n/image/upload/v1731823094/gaming-house/mohammad-faruque-TwuPHbcQ57w-unsplash_uvpusk.jpg",
+        "",
     },
     {
       name: "Casey Morgan",
       role: "IT Specialist",
       color: "from-green-500 to-emerald-500",
       image:
-        "https://res.cloudinary.com/dir1jzh3n/image/upload/v1731823109/gaming-house/microsoft-365-7mBictB_urk-unsplash_bokfip.jpg",
+        "",
     },
     {
       name: "Riley Brown",
       role: "Community Manager",
       color: "from-purple-500 to-indigo-500",
       image:
-        "https://res.cloudinary.com/dir1jzh3n/image/upload/v1731823121/gaming-house/microsoft-365-o2hPCfwPPkw-unsplash_yv6pr1.jpg",
+        "",
     },
     {
       name: "David Johnson",
       role: "Hiring Manager",
       color: "from-purple-500 to-indigo-500",
       image:
-        "https://res.cloudinary.com/dir1jzh3n/image/upload/v1731822951/gaming-house/drew-hays-Kt8eGw8_S8Y-unsplash_kvhjof.jpg",
+        "",
     },
   ];
 
@@ -114,7 +114,6 @@ export default function Team() {
                 >
                   <img
                     src={member.image}
-                    alt={member.name}
                     className="w"
                   />
                 </motion.div>
