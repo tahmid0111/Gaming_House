@@ -16,8 +16,8 @@ export default function Hero() {
       y: [0, -20, 0],
       opacity: [0.5, 1, 0.5],
       transition: {
-        y: { repeat: Infinity, duration: 2, ease: "easeInOut" },
-        opacity: { repeat: Infinity, duration: 2, ease: "easeInOut" },
+        y: { repeat: Infinity, duration: 4, ease: "easeInOut" },
+        opacity: { repeat: Infinity, duration: 4, ease: "easeInOut" },
       },
     },
   }
@@ -63,7 +63,7 @@ export default function Hero() {
                         damping: 12,
                         stiffness: 100,
                         duration: 0.5,
-                        delay: (wordIndex * word.length + charIndex) * 0.05,
+                        delay: (wordIndex * word.length + charIndex) * 0.1,
                       },
                     },
                   }}

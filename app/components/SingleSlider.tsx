@@ -65,10 +65,10 @@ const SingleSlider: React.FC<SingleSliderProps> = ({ info }) => {
 
           <div className="mt-6">
             <motion.button
-              className="btn w-full xxm:w-1/2 text-xl bg-yellow-400 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-8 rounded-full mb-10"
+              className="btn w-full xxm:w-1/2 text-xl bg-yellow-400 hover:bg-yellow-400 text-black font-bold py-2 px-8 rounded-full mb-10"
               whileHover={{
-                scale: 1.05,
-                rotate: -10,
+                scale: 1.1,
+                rotate: "-5deg",
               }}
               whileTap={{ scale: 0.95 }}
             >

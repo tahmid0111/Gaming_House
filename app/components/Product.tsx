@@ -56,13 +56,13 @@ export default function Product() {
               <span className="bg-green-500 text-white text-sm font-semibold px-2 py-1 rounded">Save 20%</span>
             </motion.div>
             <motion.button 
-              className="relative group btn btn-lg 2xl:btn-wide bg-transparent border-2 border-purple-500 text-lg px-10 py-3 rounded-full shadow-lg transition-all duration-300"
-              whileHover={{ scale: 1.05 }}
+              className="relative group btn btn-lg 2xl:btn-wide bg-transparent border-2 border-purple-500 text-lg px-10 py-3 rounded-full shadow-lg duration-300"
+              whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
             >
-              <span className="relative z-10 text-white group-hover:text-purple-200 transition-colors duration-300">Add to Cart</span>
+              <span className="relative z-10 text-white group-hover:text-purple-200 transition-colors duration-100">Add to Cart</span>
               <motion.div
                 className="absolute inset-0 bg-purple-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 initial={{ scale: 0 }}

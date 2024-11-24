@@ -1,10 +1,13 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useRef, useEffect } from "react";
 import SingleSlider from "./SingleSlider";
 
 export default function SliderArea() {
   const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const handleHoverStart = () => {
     controls.start({
@@ -19,6 +22,20 @@ export default function SliderArea() {
       transition: { duration: 0.3 },
     });
   };
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 3,
+          bounce: 0.3
+        }
+      });
+    }
+  }, [isInView, controls]);
 
   const sliders = [
     {
@@ -62,8 +79,14 @@ export default function SliderArea() {
       next: "#slide1",
     },
   ];
+
   return (
-    <div className="carousel w-full">
+    <motion.div
+      ref={ref}
+      initial={{ y: "-5%", opacity: 0 }}
+      animate={controls}
+      className="carousel w-full"
+    >
       <motion.div
         id="slide1"
         className="carousel-item relative w-full overflow-hidden shadow-lg"
@@ -104,6 +127,7 @@ export default function SliderArea() {
       >
         <SingleSlider info={sliders[3]} />
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
+
